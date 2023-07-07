@@ -5,15 +5,15 @@ const app= express();
 //importar rutas
 const formapagoRoutes = require('./Routes/formapago');
 const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
-const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const clientesRoutes = require('./Routes/clientes');
+const empleadosRoutes = require('./Routes/empleados');
+const empresaRoutes = require('./Routes/empresa');
+const productoRoutes = require('./Routes/producto');
+const proveedorRoutes = require('./Routes/proveedor');
+const sucursalesRoutes = require('./Routes/surcusales');
+const tipoproductoRoutes = require('./Routes/tipoproducto');
+const tipousuarioRoutes = require('./Routes/tipousuario');
+const usuarioRoutes = require('./Routes/usuario');
 //middlewares
 app.use(morgan('dev'));
 var Connection = require('tedious').Connection; 
