@@ -4,8 +4,16 @@ const morgan = require('morgan');
 const app= express();
 //importar rutas
 const formapagoRoutes = require('./Routes/formapago');
-//const formapagoRoutes = require('./routes/paisesR');
-
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
+const areas_trabajoRoutes = require('./Routes/areas_trabajo');
 //middlewares
 app.use(morgan('dev'));
 var Connection = require('tedious').Connection; 
