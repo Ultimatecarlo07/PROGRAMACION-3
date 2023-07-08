@@ -2,6 +2,10 @@ const express= require('express');
 const path= require('path');
 const morgan = require('morgan');
 const app= express();
+const port = 3000; // 
+
+
+
 //importar rutas
 const formapagoRoutes = require('./Routes/formapago');
 const areas_trabajoRoutes = require('./Routes/areas_trabajo');
@@ -14,6 +18,12 @@ const sucursalesRoutes = require('./Routes/surcusales');
 const tipoproductoRoutes = require('./Routes/tipoproducto');
 const tipousuarioRoutes = require('./Routes/tipousuario');
 const usuarioRoutes = require('./Routes/usuario');
+
+
+app.set('port', process.env.PORT || 3000);
+app.set('view engine','ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 //middlewares
 app.use(morgan('dev'));
 var Connection = require('tedious').Connection; 
@@ -38,6 +48,10 @@ console.log("Ingreso");
 });
 
 connection.connect();
+app.get('/', function(req, res) {
+    res.render('formapago');
+});
+//inicializando el server
 
 app.listen(app.get('port'), () =>{
 console.log("PUERTO 3000");
