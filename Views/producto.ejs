@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+ 
+</head>
+
+<body>    <nav class="navbar navbar-dark bg-dark">
+            <a href="/" class="navbar-brand">REGISTRO DE PRODUCTO</a>
+        </nav>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-5">
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="/add" method="post">
+                                <div class="form-group">
+                                    <input type="text" name="num_prod" placeholder="numero del producto" class="form-control">     
+                                </div> 
+
+                                <div class="form-group">
+                                    <input type="text" name="idempresa" placeholder="Empresa" class="form-control">          
+                                </div> 
+
+                            <div class="form-group">
+                                <input type="text" name="idsuc" placeholder="Sucursales" class="form-control">         
+                            </div> 
+
+                            <div class="form-group">
+                                <input type="text" name="idtpprod" placeholder="Tipo Producto" class="form-control">          
+                            </div> 
+
+    <div class="form-group">
+                                        <input type="text" name="descripcion" placeholder="Descripcion" class="form-control">          
+                                    </div> <div class="form-group">
+
+                                        <input type="text" name="presentacion" placeholder="Presentacion" class="form-control">          
+                            
+                                </div> <div class="form-group">
+                                        <input type="text" name="marca" placeholder="Marca del Producto" class="form-control">          
+                            
+                                </div> <div class="form-group">
+                                        <input type="text" name="valor" placeholder="Valor del Producto" class="form-control">          
+                            
+                                </div> <div class="form-group">
+                                        <input type="text" name="precioventa" placeholder="Precio del Producto" class="form-control">    
+              
+                                </div> <div class="form-group">
+                                        <input type="text" name="existencia" placeholder="Existencias del Producto" class="form-control">          
+                            
+                                </div> <div class="form-group">
+                                        <input type="text" name="fecha_ingreso" placeholder="Fecha de Ingreso del Producto" class="form-control">          
+                            
+                                </div> <div class="form-group">
+                                        <input type="text" name="fecha_actualiza" placeholder="Fecha Actualizada del Producto" class="form-control">          
+                            
+                                </div> <div class="form-group">
+                                        <input type="text" name="estado" placeholder="Estado" class="form-control">          
+                           
+                                    </div> 
+                                   
+                                    <button type="submit" class="btn btn-primary">
+                                        Agregar
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-md-7">
+                            <table class="table table-borbered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>CODIGO</th>
+                                        <th>IDEMPRESA</th>
+                                        <th>IDSUCURSALES</th>
+                                        <th>IDTIPOPRODUCTO</th>
+                                        <th>DESCRIPCION</th>
+                                        <th>PRESENTACION</th>
+                                        <th>MARCA</th>
+                                        <th>VALOR</th>
+                                        <th>PRECIO DEL PRODUCTO</th>
+                                        <th>EXISTENCIAS DEL PRODUCTO</th>
+                                        <th>FECHA DE INGRESO DEL PRODUCTO</th>
+                                        <th>FECHA ACTUALIZADA</th>
+                                        <th>ESTADO</th>                           
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>       
+                    </div>
+                </div>    
+            </body>
+            </html>

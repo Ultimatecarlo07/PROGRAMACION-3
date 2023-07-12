@@ -1,6 +1,7 @@
 const express= require('express');
 const path= require('path');
 const morgan = require('morgan');
+
 const app= express();
 const port = 3000; // 
 
@@ -49,7 +50,7 @@ console.log("Ingreso");
 
 connection.connect();
 app.get('/', function(req, res) {
-    res.render('formapago');
+    res.render('usuarios');
 });
 //inicializando el server
 

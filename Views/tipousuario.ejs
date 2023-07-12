@@ -9,7 +9,7 @@
 </head>
 
 <body>    <nav class="navbar navbar-dark bg-dark">
-            <a href="/" class="navbar-brand">REGISTRO DE FORMAS DE PAGO</a>
+            <a href="/" class="navbar-brand">REGISTRO DE TIPO DE USUARIO</a>
         </nav>
         <div class="container">
             <div class="row mt-5">
@@ -18,14 +18,14 @@
                         <div class="card-body">
                             <form action="/add" method="post">
                                 <div class="form-group">
-                                    <input type="text" name="idfpago" placeholder="Pago" class="form-control"> </div> 
+                                    <input type="text" name="idtusuario" placeholder="Codigo Usuario" class="form-control"> </div> 
                                 <div class="form-group">
                                     <input type="text" name="idempresa" placeholder="Empresa" class="form-control">          
                         
                                 </div> 
 
     <div class="form-group">
-                                        <input type="text" name="formapago" placeholder="Forma" class="form-control">          
+                                        <input type="text" name="tipo" placeholder="Tipo Usuario" class="form-control">          
                                     </div> <div class="form-group">
                                         <input type="text" name="estado" placeholder="Estado" class="form-control">          
                             
@@ -49,7 +49,7 @@
                                     <tr>
                                         <th>CODIGO</th>
                                         <th>IDEMPRESA</th>
-                                        <th>FORMA PAGO</th>
+                                        <th>TIPO</th>
                                         <th>ESTADO</th>                           
                                     </tr>
                                 </thead>
@@ -59,6 +59,3 @@
                 </div>    
             </body>
             </html>
-            
-        
-    
